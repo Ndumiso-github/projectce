@@ -3,6 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi"> ---- 
+
+
+                      include this so it adjusts with  window-------->
+
+<meta name="viewport" id="metaViewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<script>
+if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
+    document.getElementById('metaViewport').setAttribute('content', 'width='+screen.width+', initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+</script>
 
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,7 +24,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,700;1,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="icon" type="image/gif/png" href="images/logo.png">
+<link rel="icon" type="image/gif/png" href="images/logo.png"> 
 
 	<title>Celiwe Shivambu</title>
 	<style>body>script+div[style^="text"]{display:none}html,body {overflow-x:hidden!important}</style>  <!-- delete white space---->
@@ -58,6 +72,7 @@
 		<li><a href="#mywork"><i class="fa fa-user"> </i></a></li>
 		<li><a href="#projects"><i class="fa fa-globe"> </i></a></li>
 		<li><a href="#contacts"><i class="fa fa-phone"> </i></a></li>
+		<li><a href="#contacts"><i class="fa fa-download"> </i></a></li>
 
 		</ul>
 	</div>
@@ -89,7 +104,9 @@
 
 <div class="col">
 	
- <img src="images/celi2.png"> 
+ <img src="images/celi2.png" alt="my image" onerror=this.src="images/celi3"> 
+<!-- <img class="avatar" src="img/one.jpg" alt="Not Found" onerror=this.src="img/undefined.jpg">-->
+
 
 </div>
 
@@ -108,7 +125,8 @@
 		
 		<div class="numbertext">1/3</div>
 		<img src="images/celi3.png" style="width:200px">
-		<div class="text">Caption 1</div>
+		<div class="text">Caption 1 <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</div>
 
 	</div>
 	<!------------------------------------>
@@ -116,8 +134,9 @@
 	<div class="mySlides fade">
 		
 		<div class="numbertext">2/3</div>
-		<img src="images/celi4.png" style="width:200px">
-		<div class="text">Caption 2</div>
+		<div><img src="images/celi4.png" style="width:200px"> </div>
+		<div class="text">Caption 2 <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. </div>
 
 	</div>
 
@@ -126,7 +145,8 @@
 		
 		<div class="numbertext">3/3</div>
 		<img src="images/celi5.png" style="width:200px">
-		<div class="text">Caption 3</div>
+		<div class="text">Caption 3 <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</div>
 
 	</div>
 
@@ -185,6 +205,7 @@
 <!-------------Some Java Script------------>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
 
 
