@@ -51,6 +51,7 @@
 		</ul>
 	
 	</div>
+	<div class=" sidemenu2">
 		<div class="sidemenu">
 		<ul>
 		<li><a href="#home"><i class="fa fa-home"> </i></a></li>
@@ -59,6 +60,7 @@
 		<li><a href="#contacts"><i class="fa fa-phone"> </i></a></li>
 
 		</ul>
+	</div>
 	</div>
 
 </nav>
@@ -182,7 +184,7 @@
 
 <!-------------Some Java Script------------>
 
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 
 
@@ -207,8 +209,10 @@
 	//-----Side menu setup-----------
 	var menu=document.getElementsByClassName("sidemenu");
 
+
 window.addEventListener("scroll", function(){
 let offset=window.pageYOffset;
+
 
 
 	if (offset>30) {
@@ -223,10 +227,12 @@ let offset=window.pageYOffset;
 
 
 	if (offset<30) {
-
+	
 		for(var i=0; i<menu.length; i++){
 
 			menu[i].style.display='none';
+
+
 		}	
 		
 	}
