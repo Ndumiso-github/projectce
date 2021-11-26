@@ -79,7 +79,7 @@ clip: rect(0px,390px,370px,0px);
 	transform: rotate(45deg);
 
 }
-
+/*------smaller screens----*/
 @media(max-width: 700px){
 
 .header h1{font-size: 26px;}
@@ -89,6 +89,42 @@ clip: rect(0px,390px,370px,0px);
 .hero2{
 	left: 370px;
 }
+}
+/*----cellphone screens-----*/
+
+@media(max-width:515px){
+
+.header h1{font-size: 16px;}
+.hero{
+	left: -10px;
+}
+.hero2{
+	display: none;
+}
+
+.nav-links ul{
+display: none;
+
+}
+
+.sidemenu{
+	top: 0px;
+	left: -45px;
+	position: absolute;
+	position: fixed;
+	opacity: 0.7;
+	padding-left: 50px;
+	padding-top: 0;
+	
+}
+.sidemenu ul{
+	display: inline-block;
+	margin-top: 0px;
+	left: 0;
+}
+
+
+
 }
 
 /*---Button---*/
