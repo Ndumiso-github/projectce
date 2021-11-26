@@ -79,53 +79,7 @@ clip: rect(0px,390px,370px,0px);
 	transform: rotate(45deg);
 
 }
-/*------smaller screens----*/
-@media(max-width: 700px){
 
-.header h1{font-size: 26px;}
-.hero{
-	left: 50px;
-}
-.hero2{
-	left: 370px;
-}
-}
-/*----cellphone screens-----*/
-
-@media(max-width:515px){
-
-.header h1{font-size: 16px;}
-.hero{
-	left: -10px;
-}
-.hero2{
-	display: none;
-}
-
-.nav-links ul{
-display: none;
-
-}
-
-.sidemenu{
-	top: 0px;
-	left: -45px;
-	position: absolute;
-	position: fixed;
-	opacity: 0.7;
-	padding-left: 50px;
-	padding-top: 0;
-	
-}
-.sidemenu ul{
-	display: inline-block;
-	margin-top: 0px;
-	left: 0;
-}
-
-
-
-}
 
 /*---Button---*/
 
@@ -201,6 +155,7 @@ padding: 10px;
 	width: 60px;
 	height: 60px;
 	position: fixed;
+	-webkit-backface-visibility: hidden;
 }
 
 
@@ -323,21 +278,7 @@ text-align:center ;
 
 }
 
-@media(max-width: 700px){
-	.row{
-		flex-direction: column;
-		padding-left: 40px;
-	}
-	.pages h3{
-		padding: 10px;
-		margin: 10px;
-	}
 
-	.pages p{
-		padding: 10px;
-		margin: 10px;
-	}
-}
 /*----------------projects---------*/
 .projects{
 	background-color: #2E2E2E;
@@ -403,10 +344,14 @@ padding-bottom: 10px;
 	color: #f2f2f2;
 	font-size: 15px;
 	padding: 8px 12 px;
+	/*padding-left: 200px;*/
+	right: 4%;
+	left: 40%;
 	position: absolute;
 	top: 50px;
-	width: 100%;
+	width: 50%;
 	text-align: center;
+
 }
 
 .numbertext{
@@ -432,13 +377,7 @@ from{opacity: 0.4}
 to{opacity: 1;}
 }
 
-@media(max-width: 700px){
 
-.projects h3{
-	margin: 0px;
-	padding: 0px
-}
-}
 /* ------------------Contact me ---------------*/
 
 .contacts{
@@ -484,9 +423,9 @@ color: hotpink;
 	opacity: 0.8;
 	border-radius: 20px;
 	position: relative;
-	margin-left: 300px;
-	margin-right:50px;
-	bottom: 350px;
+	margin-left: 50%;
+	
+	bottom: 400px;
 	padding:10px;
 	overflow: hidden;
 	transition: 0.5s;
@@ -505,7 +444,6 @@ color: hotpink;
 	margin-top: 0;
 	position: relative;
 	border-radius: 20px;
-
 }
 .fa-times:hover{
 	color: red;
@@ -537,11 +475,120 @@ color: blue;
 
 }
 
+/*------smaller screens----*/
 @media(max-width: 700px){
 
 	.fa{
 padding: 25px;
-]
+
 }
+
+
+}
+
+
+@media(max-width: 700px){
+
+.header h1{font-size: 26px;}
+.hero{
+	left: 50px;
+}
+.hero2{
+	left: 370px;
+}
+}
+
+@media(max-width: 700px){
+	.row{
+		flex-direction: column;
+		padding-left: 40px;
+	}
+	.pages h3{
+		padding: 10px;
+		margin: 10px;
+	}
+
+	.pages p{
+		padding: 10px;
+		margin: 10px;
+	}
+
+	.mySlides img{
+
+		margin-top: 40%;
+		text-align: left;
+	}
+	.text{
+		width: 70%;
+		left: 0px;
+
+	}
+
+	.numbertext{
+display: none;
+	}
+
+
+}
+@media(max-width: 700px){
+
+.projects h3{
+	margin: 0px;
+	padding: 0px
+}
+}
+
+
+/*----cellphone screens-----*/
+
+@media(max-width:515px){
+
+.header h1{font-size: 18px;
+	top: 170px;
+	left: 40px;
+}
+.logo img{
+	padding-left: 50%;
+	padding-right: 50%;
+background-color: grey;
+opacity: 0.7;
+}
+
+.hero{
+	left: -270px;
+}
+.hero2{
+	display: none;
+}
+
+.nav-links ul {
+display: none;
+}
+
+.sidemenu{
+	top: 0px;
+	left: -45px;
+	position: absolute;
+	position: fixed;
+	opacity: 0.7;
+	padding-left: 50px;
+	padding-top: 0;
+	
+}
+.sidemenu ul{
+	display: inline-block;
+	margin-top: 0px;
+	left: 0;
+}
+
+.btn{
+display: none;}
+
+.text{
+	
+position: relative;
+}
+
+
 
 }
