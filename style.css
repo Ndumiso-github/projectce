@@ -19,12 +19,16 @@ background-color: #2E2E2E;
 }
 
 .header h1{
-
+	font-family: 'Shalimar', cursive;
 	position: relative;
 	top: 250px;
 	left: 90px;
 	font-size: 38px;
 
+}
+
+.auto-input{
+	font-family: 'Shalimar', cursive;
 }
 
 .header p{
@@ -55,10 +59,9 @@ clip: rect(80px,470px,400px,260px);
 }
 /*
 .hero:hover{
-	left: 180px;
-	top: 110px;
-}
-*/
+	left: 1%;
+	top: 1%;
+}*/
 
 .hero2{
 position: absolute;
@@ -99,10 +102,10 @@ clip: rect(0px,390px,370px,0px);
 }
 
 .btn:hover{
-	background-color: white;
+	background-color: lightgrey;
 	color: black;
 	display: inline-block;
-	border: 2px solid black;
+	border: 2px solid yellowgreen;
 
 }
 
@@ -171,6 +174,7 @@ padding: 10px;
 	position: absolute;
 	position: fixed;
 	opacity: 0.7;
+	z-index: 100;
 
 }
 .sidemenu ul {
@@ -380,8 +384,42 @@ from{opacity: 0.4}
 to{opacity: 1;}
 }
 
+/*-----------My Work-----------*/
+
+.grid{
+	display: inline-table;
+	padding-top: 60px;
+	z-index: 2;
+}
+.grid img{
+	width: 30%;
+	max-height: 800px;
+	height: 50%;
+	border-radius: 10px;
+padding: 3px;
+position: relative;
+background-color: grey;
+filter: brightness(50%)
+}
+
+.grid img:hover{
+opacity: 90%;
+filter: brightness(90%);
+transform:scale(1.06);
+}
+.grid h4{
+
+	display: flex;
+	padding-left: 40%;
+	font-size: 18px;
+	padding-bottom: 6%;
+	
+}
+
+
 
 /* ------------------Contact me ---------------*/
+
 
 .contacts{
 
@@ -478,6 +516,12 @@ color: blue;
 
 }
 
+/*----------Signature----------------*/
+.signature{
+	font-size: 14px;
+	padding-left: 90px;
+}
+
 /*------smaller screens----*/
 @media(max-width: 700px){
 
@@ -555,6 +599,7 @@ display: none;
 	padding-right: 50%;
 background-color: grey;
 opacity: 0.7;
+z-index: 50;
 }
 
 .hero{

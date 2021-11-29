@@ -16,7 +16,7 @@
 <script>
 if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
     document.getElementById('metaViewport').setAttribute('content', 'width='+screen.width+', initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
-</script>
+</script> <!------- accomodate screen--------->
 
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +45,7 @@ if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
 	
 
 <h1>Hi, I am  <span class="auto-input"> </span></h1>
-<p>You are What You Believe In </p>
+<p> Dedicated To A Better Future </p>
  
 <div class="btn"> <a href="">DOWNLOAD MY CV</a></div>
 <!------------Menu things------------------>
@@ -57,9 +57,9 @@ if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
 		<ul>
 			<li><a href="#home"> HOME</a></li>
 			
-			<li><a href="#mywork"> MY WORK</a></li>
+			<li><a href="#mywork">ABOUT</a></li>
 			
-			<li><a href="#projects"> PROJECTS</a></li>
+			<li><a href="#projects">PROJECTS</a></li>
 			<li><a href="#contacts"> CONTACT ME</a></li>
 			
 		</ul>
@@ -90,14 +90,14 @@ if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
 	<!------ My work------------->
 
 	<div class=" my-work" id="mywork">
-		<div><h3>MY WORK</h3></div>
+		<div><h3>WHO AM I?</h3></div>
 
 <div class="row">	
 
 	<div class="col" ></div>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	<p>I am an international relation Honours Students at the University Of the Witwatersrand, a Youth and Climate change activist. I am a co-author for the Youth Climate Action Plan(YCAP) for the city of Joburg, part of the African-European Youth Forum drafting team on the topic of climate Action and Reneable Energy in 2020. lead  writer of African peer review mechanism on climate education and Awereness Raising. Project leader of Climate Plan  at at the south African Institute for International Affairs Youth@SAIIA
+
 	<button class="button"> Find Out More <i class="fa fa-arrow-right"></i></button>
 </p>
 
@@ -154,18 +154,37 @@ if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 -->
 </div>
+
+<div class="grid">
+	<h4>My Work</h4>
+		<a href=""><img src="images/celi9.png"></a>
+		<!--<i class="fa fa-arrow-right"></i>-->
+
+	<a href=""><img src="images/celi10.png"> </a>
+	<a href=""><img src="images/celi17.png"></a>
+	<a href=""><img src="images/celi11.png"></a>
+	<!--<img src="images/celi12.png">-->
+	<a href=""><img src="images/celi13.png"></a>
+	<a href=""><img src="images/celi14.png"></a>
+	<a href=""><img src="images/celi15.png"></a>
+	<a href=""><img src="images/celi16.png"></a>
+	
+
+</div>
+
 <!------- Contact Details--->
+<br><hr>
 <div class="contacts" id="contacts">
 	
 <h3>Don't be shy, Hit Me Up</h3>
 
 <div class="icons">
 	
-<a href="https://www.instagram.com/zabelozenkosi/"><i class="fa fa-instagram" ></i></a>
-<a href="https://www.instagram.com/zabelozenkosi/"><i class="fa fa-whatsapp" ></i></a>
+<a href="https://www.instagram.com/delegate_rsa/"><i class="fa fa-instagram" ></i></a>
+<a href="https"><i class="fa fa-whatsapp" ></i></a>
 <a href="https://www.instagram.com/zabelozenkosi/"><i class="fa fa-twitter" ></i></a>
-<a href="https://www.instagram.com/zabelozenkosi/"><i class="fa fa-linkedin" ></i></a>
-<a href="https://www.instagram.com/zabelozenkosi/"><i class="fa fa-facebook" ></i></a>
+<a href="https://www.linkedin.com/in/celiweshivambu/"><i class="fa fa-linkedin" ></i></a>
+<a href="https://www.facebook.com/celimusa.shivambo"><i class="fa fa-facebook" ></i></a>
 
 <!---------Form here-------->
 <a onclick="openForm()"><i class="fa fa-envelope"></i></a> 
@@ -197,6 +216,10 @@ if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
 
 </div>
 
+<hr><br>
+<div class="signature"> All rise! The King developed this for a distinguished friend</div>
+<hr><br>
+
 </section>
 
 
@@ -208,14 +231,14 @@ if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
 
 
 <script>
-	//--------------personalise name------------------//
+	//--------------personalise name auto input------------------//
 
 
 	var typed=new Typed(".auto-input", {
 
 		strings:["","Celiwe Shivambu", "a climate activist"],
-		typeSpeed:100,
-		backSpeed:60,
+		typeSpeed:80,
+		backSpeed:25,
 		loop:true
 	});
 
